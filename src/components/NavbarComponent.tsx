@@ -10,7 +10,7 @@ const NavbarComponent = () => {
             document.body.setAttribute("data-bs-theme","dark")
             setInputColor("text-light bg-dark")
         } else {
-            document.body.setAttribute("data-bs-theme","light")
+            document.body.setAttribute("data-bs-theme","dark")
             setInputColor("")
         }
         console.log(darkMode)

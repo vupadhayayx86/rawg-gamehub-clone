@@ -1,9 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 
+body{
+  color: white;
+}
+a {
+  all: unset;
+}
+
+a:hover {
+  all: unset;
+}
 .logo-text{
   text-decoration: none;
   font-family: 'Anton';
   font-size: 2rem;
   letter-spacing: 4px;
   color:inherit;
+}
+
+
+/*Link Component CSS */
+.link-component{
+  font-size: 1.7rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.link-component:hover{
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #33363D;
+}
+
+.logo{
+  margin-right: 10px;
+  font-size: 24px;
+}
+.logo:hover{
+  color:grey;
+  margin-right: 10px;
+  font-size: 28px;
+  
 }
