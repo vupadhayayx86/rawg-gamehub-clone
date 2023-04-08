@@ -2,7 +2,6 @@ import LinkComponent from "./components/LinkComponent";
 import NavbarComponent from "./components/NavbarComponent";
 import {Link, Route,Routes} from "react-router-dom";
 import { Windows,Playstation,Xbox,NintendoSwitch,Android,Apple } from "react-bootstrap-icons";
-import {action,rpg,adventure} from "./assets/index"
 import LogoText from "./components/LogoText";
 import ImageText from "./components/ImageText";
 import ImagesExport from "./assets/ImagesExport"
@@ -34,9 +33,7 @@ function App(){
         </div>
         <div className="col-sm-10">
           <h1>New & Trending</h1>
-          <img src={action} alt="action" />
-          <img src={rpg} alt="action" />
-          <img src={adventure} alt="action" />
+          
         </div>
       </div>
       
