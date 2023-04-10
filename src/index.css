@@ -22,16 +22,18 @@ a:hover {
 
 /*Link Component CSS */
 .link-component{
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-decoration: none;
   font-weight: 700;
+  font-family: "Noto Sans";
 }
 
 .link-component:hover{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-decoration: none;
   font-weight: 700;
   color: #33363D;
+  font-family: "Noto Sans";
 }
 
 .logo{
@@ -43,4 +45,27 @@ a:hover {
   margin-right: 10px;
   font-size: 28px;
   
+}
+
+.card{
+  transition: all 0.5s;
+  width: 270px;
+}
+
+.card:hover{
+  transform: scale(1.15);
+  min-height: 380px;
+  margin-top: 10%;
+}
+
+.metacritic-data{
+  
+  float: right;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid grey;
+  padding: 3px;
+  border-radius: 5px;
+  
+
 }

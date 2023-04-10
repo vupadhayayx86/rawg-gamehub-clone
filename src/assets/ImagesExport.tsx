@@ -7,5 +7,6 @@ import shooter from "./images/Shooter.png"
 
 export default function ImagesExport(){
     const genreImages=[action,adventure,rpg,strategy,sports,shooter]
-    return genreImages
+    const genreText=["Action","Adventure","RPG","Strategy","Sports","Shooter"]
+    return [genreImages,genreText]
 }
