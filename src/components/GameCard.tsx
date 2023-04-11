@@ -4,6 +4,10 @@ import Tooltip from "react-bootstrap/Tooltip"
 import { OverlayTrigger } from 'react-bootstrap'
 import ExtraContent from './ExtraContent'
 
+interface ElementProp{
+  name:String[]
+}
+
 interface Props{
     background_image:String,
     name:String,
@@ -11,7 +15,7 @@ interface Props{
     metacritic:number,
     rating:String,
     released:String,
-    genres:String[]
+    genres:ElementProp[]
 
 }
 
@@ -20,7 +24,7 @@ const GameCard = ({background_image,name,ratings_count,metacritic,rating,release
     const [showExtra,setShowExtra]=useState(false)
     
     let genreText=" "
-    genres.forEach(element => {
+    genres.forEach((element:any) => {
       genreText+=element?.name+ ", "
     });
 
@@ -45,6 +49,7 @@ const GameCard = ({background_image,name,ratings_count,metacritic,rating,release
             <RatingButton ratings_count={ratings_count} />
             {showExtra && 
             <>
+            
             <ExtraContent e_feild="Ratings : " e_value={rating} />
             <ExtraContent e_feild="Released  : " e_value={released} />
             <ExtraContent e_feild="Genres  : " e_value={genreText} />
