@@ -23,7 +23,9 @@ const HomePageGames = () => {
     console.log(data)
     
   return (
-    <div className='d-flex flex-wrap gap-5'>
+    <>
+    <h1 className="heading-top">New & Trending</h1>
+    <div className='d-flex flex-wrap gap-4'>
         {data?.map((item:Props)=>(
             <div key={item.id}>
                 <GameCard 
@@ -40,6 +42,8 @@ const HomePageGames = () => {
             </div>
         ))}
     </div>
+    </>
+    
   )
 }
 

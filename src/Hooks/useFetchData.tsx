@@ -25,9 +25,11 @@ export default function useFetchData(url:string){
 
     useEffect(()=>{
         axios.get<Results>(url)
-        .then((res)=>setGameData(res.data.results))
+        .then((res)=>{setGameData(res.data.results)
+            console.log(res.data)
+        })
         .catch((error)=>console.log(error))
     },[url])
-
+    
     return [gameData,setGameData]
 }

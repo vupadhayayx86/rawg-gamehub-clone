@@ -1,5 +1,3 @@
-import React from 'react'
-import { Windows} from 'react-bootstrap-icons'
 import { Link } from 'react-router-dom'
 interface Props{
     text:String

@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Route  path="home" element={<App />} />
          <Route path="genre" element={<Genre/>} />
          <Route path="platform" element={<Paltform />} />
-         <Route path="review" element={<Review />} />
+         <Route path="reviews" element={<Review />} />
          <Route path="publishers" element={<Publishers />} />
          <Route path="profile" element={<Profile />} />
          <Route path="*" element={<Nomatch />}/>

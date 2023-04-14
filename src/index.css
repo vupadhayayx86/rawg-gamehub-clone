@@ -11,7 +11,7 @@ a {
 a:hover {
   all: unset;
 }
-.logo-text{
+.logo-text,.logo-text:hover{
   text-decoration: none;
   font-family: 'Anton';
   font-size: 2rem;
@@ -32,8 +32,9 @@ a:hover {
   font-size: 1.6rem;
   text-decoration: none;
   font-weight: 700;
-  color: #33363D;
+  color: #bdbec2;
   font-family: "Noto Sans";
+  cursor: pointer;
 }
 
 .logo{
@@ -49,13 +50,14 @@ a:hover {
 
 .card{
   transition: all 0.5s;
-  width: 270px;
+  width: 250px;
 }
 
 .card:hover{
   transform: scale(1.15);
   min-height: 380px;
   margin-top: 10%;
+  z-index: 5;
 }
 
 .metacritic-data{
@@ -67,5 +69,14 @@ a:hover {
   padding: 3px;
   border-radius: 5px;
   
+
+}
+
+.heading-top{
+  font-size: 72px;
+  line-height: 74px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
 
 }

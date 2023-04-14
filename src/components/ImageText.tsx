@@ -1,5 +1,3 @@
-import React, { ReactElement } from 'react'
-
 interface Props{
     genreImages:String[],
     genreText:String[]
